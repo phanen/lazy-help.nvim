@@ -11,7 +11,7 @@ Table of Contents                           *lazy-help.nvim-table-of-contents*
 
 <https://github.com/phanen/lazy-help.nvim/actions/workflows/ci.yml>
 
-Lazy.nvim while not lazy load your docs.
+Lazy.nvim while not lazy load your helpdocs.
 
 >lua
     {
