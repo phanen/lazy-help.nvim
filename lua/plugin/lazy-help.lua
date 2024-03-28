@@ -13,7 +13,6 @@ vim.api.nvim_create_autocmd('User', {
       end
     end)
     for _, plugin in pairs(lazy_config.plugins) do
-      vim.print(plugin.dir)
       local docs = vim.fs.joinpath(plugin.dir, 'doc')
       if lazy_util.file_exists(docs) then
         lazy_util.ls(docs, function(path, name, type)
