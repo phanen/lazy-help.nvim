@@ -7,3 +7,9 @@ Lazy.nvim while not lazy load your helpdocs.
   "phanen/lazy-help.nvim", ft = "lazy",
 },
 ```
+
+> Ensure appending docs' cache into rtp
+```lua
+vim.g.docs_path = vim.fs.joinpath(vim.fn.stdpath('cache'), 'where-ever-you-like')
+vim.opt.rtp:append(vim.g.docs_path)
+```

@@ -4,8 +4,8 @@ vim.api.nvim_create_autocmd('User', {
   callback = function()
     local lazy_util = package.loaded['lazy.util']
     local lazy_config = package.loaded['lazy.core.config']
-    local docs_root = vim.fs.joinpath(vim.fs.dirname(lazy_config.options.readme))
-    local docs_path = vim.fs.joinpath(docs_root, 'doc')
+    local docs_path = vim.g.docs_path and vim.fs.joinpath(vim.g.docs_path, 'doc')
+      or vim.fs.joinpath(vim.fs.dirname(lazy_config.options.readme.root), 'docs', 'doc')
     vim.fn.mkdir(docs_path, 'p')
     lazy_util.ls(docs_path, function(path, _, _)
       if type == 'file' then
