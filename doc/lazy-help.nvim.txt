@@ -1,4 +1,4 @@
-*lazy-help.nvim.txt*       For Neovim >= 0.8.0      Last change: 2024 March 29
+*lazy-help.nvim.txt*       For Neovim >= 0.8.0      Last change: 2024 March 30
 
 ==============================================================================
 Table of Contents                           *lazy-help.nvim-table-of-contents*
@@ -17,6 +17,13 @@ Lazy.nvim while not lazy load your helpdocs.
     {
       "phanen/lazy-help.nvim", ft = "lazy",
     },
+<
+
+
+  Ensure appending docs’ cache into rtp
+>lua
+    vim.g.docs_path = vim.fs.joinpath(vim.fn.stdpath('cache'), 'where-ever-you-like')
+    vim.opt.rtp:append(vim.g.docs_path)
 <
 
 ==============================================================================
