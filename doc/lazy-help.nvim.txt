@@ -1,4 +1,4 @@
-*lazy-help.nvim.txt*       For Neovim >= 0.8.0      Last change: 2024 April 01
+*lazy-help.nvim.txt*       For Neovim >= 0.8.0      Last change: 2024 April 03
 
 ==============================================================================
 Table of Contents                           *lazy-help.nvim-table-of-contents*
