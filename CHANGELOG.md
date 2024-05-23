@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/phanen/lazy-help.nvim/compare/v1.0.1...v1.0.2) (2024-05-23)
+
+
+### Bug Fixes
+
+* ignore error ([4e38aa7](https://github.com/phanen/lazy-help.nvim/commit/4e38aa712c2dd608182ccc6fd1d35c23412f1a66))
+
 ## [1.0.1](https://github.com/phanen/lazy-help.nvim/compare/v1.0.0...v1.0.1) (2024-04-01)
 
 
