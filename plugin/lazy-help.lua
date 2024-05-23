@@ -27,6 +27,7 @@ vim.api.nvim_create_autocmd('User', {
         end)
       end
     end
-    vim.cmd.helptags(docs_path)
+    -- TODO: handle it
+    pcall(vim.cmd.helptags, docs_path)
   end,
 })
