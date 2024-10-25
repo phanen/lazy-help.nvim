@@ -7,16 +7,16 @@ vim.api.nvim_create_autocmd('User', {
     local docs_path = vim.g.docs_path and vim.fs.joinpath(vim.g.docs_path, 'doc')
       or vim.fs.joinpath(vim.fs.dirname(lazy_config.options.readme.root), 'docs', 'doc')
     vim.fn.mkdir(docs_path, 'p')
-    lazy_util.ls(docs_path, function(path, _, _)
-      if type == 'file' then
+    lazy_util.ls(docs_path, function(path, _, ty)
+      if ty == 'file' then
         vim.uv.fs_unlink(path)
       end
     end)
     for _, plugin in pairs(lazy_config.plugins) do
       local docs = vim.fs.joinpath(plugin.dir, 'doc')
       if lazy_util.file_exists(docs) then
-        lazy_util.ls(docs, function(path, name, type)
-          if type ~= 'file' then
+        lazy_util.ls(docs, function(path, name, ty)
+          if ty ~= 'file' then
             return
           end
           if name == 'tags' then
