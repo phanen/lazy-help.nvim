@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/phanen/lazy-help.nvim/compare/v1.0.2...v1.0.3) (2024-10-25)
+
+
+### Bug Fixes
+
+* typos ([1d3e07a](https://github.com/phanen/lazy-help.nvim/commit/1d3e07ac05deac00806e511454f3c9f21bcaf769))
+
 ## [1.0.2](https://github.com/phanen/lazy-help.nvim/compare/v1.0.1...v1.0.2) (2024-05-23)
 
 
